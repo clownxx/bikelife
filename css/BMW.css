@@ -6,6 +6,7 @@
 body,html{
     width: 100%;
     height: 100%;
+    background: whitesmoke;
 }
 header{
     height: 70px;
@@ -109,12 +110,14 @@ margin-left: 120px;
 }
 .main{
     width: 80%;
+    height: 1500px;
     margin: auto;
     display: flex;
     margin-top: 20px;
 }
 .main-box{
     width: 70%;
+    border-right: 1px solid black;
 }
 .main-box .main-list p{
     font-size: 13px;
@@ -129,116 +132,91 @@ margin-left: 120px;
 .main-box .main-list a:hover {
     color: aqua;
 }
+.main .main-box .title{
+    width: 70%;
+    height: 40px;
+    padding-top: 40px;
+}
+.main-box .title h1{
+    font-size: 22px;
+}
+.main-box .time{
+    padding-bottom: 30px;
+}
+.main-box .time span{
+    font-size: 12px;
+}
 .main-box .article {
-    width: 100%;
-    height: 250px;
-    padding-top: 30px;
-    display: flex;
-    position: relative;
+    width: 90%;
+    height: 120px;
+    padding-top: 20px;
 }
-.article .img1 {
-    width: 350px;
-    height: 220px;
-
-}
-.article .img1 img {
-    width: 350px;
-    height: 220px;
-}
-.article .content {
-    width: 450px;
-    height: 220px;
-    margin-left: 20px;
-}
-.article .content h1{
-    font-size: 20px;
-}
-.article .content h1:hover{
-    color: red;
-    cursor: pointer;
-}
-.article .content span {
-    font-size: 12px;
-    color: silver;
-}
-.article .content p{
-    font-size: 13px;
+.main-box .article span{
+    font-size: 14px;
     line-height: 30px;
+    color: #999999;
 }
-.article .content a{
-    text-decoration: none;
-    color: saddlebrown;
-    font-size: 12px;
+.main-box .vidio {
+    width: 90%;
+    height: 500px;
+    border: 1px solid wheat;
+    background: white;
 }
-.article .content a:hover{
-    color: red;
-    text-decoration: underline red;
-}
-.article .icon{
-    width: 160px;
-    height: 20px;
-    position: absolute;
-    bottom: 30px;
-    right: 20px;
-    display: flex;
-}
-.article .icon img{
-    width: 26px;
-    height: 20px;
-}
-.article .icon .img1{
-    width: 80px;
-    height: 20px;
-    margin-right: 20px;
-}
-.article .icon span{
-    font-size: 13px;
-    color: slategrey;
-}
-.article .icon .text{
-    width: 30px;
-    height: 20px;
-    padding-top: 0px;
-    text-align: center;
-    position: relative;
-    right: 30px;
-}
-.main-box .huanye {
-    width: 600px;
-    height: 50px;
-    margin-left: 250px;
-}
-.main-box .huanye ul{
-    display: flex;
-    list-style-type: none;
-    text-align: center;
-}
-.main-box .huanye li{
-    border: 1px solid silver;
-    margin-right: 10px;
-    padding: 3px;
-    
-}
-.main-box .huanye a{
-    font-size: 13px;
-    text-decoration: none;
-    color: black
-}
-.main-box .huanye li:hover{
-    background: skyblue;
-}
-.main-box .huanye .text2{
+.main-box .share {
     width: 100px;
-    height: 20px;
-    margin-top:5px;
+    height: 50px;
+    position: relative;
+    left: 650px;
+    padding-top: 30px;
 }
-.main-box .huanye .text2 span{
+.main-box .share span{
     font-size: 12px;
-    color: silver;
+    color: #999999;
+}
+.main-box .like {
+    width: 150px;
+    height: 30px;
+    padding-top: 20px;
+}
+.main-box .like h1{
+    font-size: 16px;
+}
+.main-box .speak {
+    padding-top: 30px;
+}
+.main-box .speak span {
+    font-size: 13px;
+    color: #999999;
 }
 .cebian-box {
     width: 30%;
     padding-top: 50px;
+}
+.cebian-box .zan {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 30px;
+    display: flex;
+}
+.cebian-box .zan .img{
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+.cebian-box .zan .text{
+    width: 35px;
+    height: 50px;
+    position: relative;
+    left: 20px;
+    top: 30px;
+}
+.cebian-box .zan .text span {
+    font-size: 20px;
+    columns: #999999;
+}
+.cebian-box .zan img:hover{
+    background: url("../img/images/like2.png");
+    cursor: pointer;
 }
 .cebian-box .img2 {
     width: 250px;
