@@ -10,11 +10,11 @@ body,html{
 /* 头部 */
 header{
     height: 580px;
-    background: red;
+    background: #C3C6CA;
 }
 header .nav{
 height: 70px;
-background: #000;
+background: #353535;
 display: flex;
 }
 .nav-l{
@@ -38,8 +38,54 @@ margin-left: 120px;
     font-family: "Microsoft Yahei";
     font-size: 15px;
 }
-.nav-c ul li:hover a{
-    color: blue;
+/* 单车 */
+.nav-c ul .dcfl .danche{
+    background: #000;
+    width: 150px;
+    height: 222px;
+    position: absolute;
+    top: 70px;
+    z-index: 5;
+    display: none;
+}
+.nav-c ul .dcfl .danche div,.nav-c ul .qixing .qx{
+    width: 150px;  
+    height: 30px;
+}
+.nav-c ul .dcfl .danche a,.nav-c ul .qixing .qx a{
+    margin-left: 10px;
+    color: #777;
+    font-size: 10px;
+    width: 150px;  
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+}
+.nav-c ul .dcfl:hover .danche,.nav-c ul .qixing:hover .qx{
+    display: block;
+}
+.nav-c ul .dcfl .danche div:hover,.nav-c ul .qixing .qx div:hover {
+    background: #777;
+    opacity: .5;
+}
+.nav-c ul .dcfl .danche div:hover a,.nav-c ul .qixing .qx div:hover a{
+    color: #01A1ED;
+}
+/* 骑行 */
+.nav-c ul .qixing .qx{
+    background: #000;
+    width: 150px;
+    height: 63px;
+    position: absolute;
+    top: 70px;
+    z-index: 5;
+    display: none;
+}
+
+
+/* 选中 */
+.nav-c ul li:hover .a{
+    color: #01A1ED;
 }
 .nav-r{
     width: 200px;
@@ -59,15 +105,73 @@ margin-left: 120px;
     box-sizing: border-box;
     text-indent: 1em;
 }
-
-/* 内容 */
-.content{
-height: 500px;
-background: green;
+.nav-r .tu img:hover{
+    cursor: pointer;
+}
+/* 轮播图左边 */
+header .banner{
+    width: 86%;
+    height: 430px;
+    margin: 40px auto;
+    position: relative;
+}
+header .banner .banner-l{
+    float: left;
+    width: 880px;
+    height: 430px;
+    overflow: hidden;
+}
+header .banner .banner-l ul{
+    list-style: none;
+    width: 4400px;
+    height: 430px;
+    animation: all 10s linear infinite;
+}
+header .banner .banner-l ul li{
+    width: 880px;
+    height: 430px;
+    float: left;
+}
+header .banner .banner-l ul li img{
+    width: 880px;
+    height: 430px;
 }
 
-/* 尾部 */
-footer{
-    height: 460px;
-    background: gold;
+@keyframes all{
+    0%{
+        transform: translate( 0px);
+    }
+    100%{
+        transform: translate(-3520px);
+    }
 }
+ 
+header .banner .banner-r{
+    float: right;
+    height: 430px;
+    width: 255px;
+    overflow: hidden;
+}
+header .banner .banner-r .img{
+    height: 385px;
+    width: 255px;
+    background: url(../Image/1-140206160415Y6.jpg);
+}
+header .banner .banner-r p{
+    height: 45px;
+    width: 255px;
+    background-color: #01A1ED;
+    cursor: pointer;
+    line-height: 45px;
+    text-indent: 35px;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+
+
+
+
+

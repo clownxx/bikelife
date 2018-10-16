@@ -1,0 +1,48 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.content-r-box{
+   width: 255px;
+    margin: 0 auto;
+}
+.bg{
+   margin-top: 40px;
+}
+.content-r-li{
+    width: 253px;
+    height: 96px;
+    display: flex;
+    border-bottom: 1px dashed #777;
+}
+.content-r-li-img img{
+    margin: 20px 0;
+    width: 84px;
+    height: 54px;
+}
+.content-r-li p{
+    margin: 20px 0 10px 20px;
+    color: #444;
+    font-size: 13px;
+    line-height: 20px;
+}
+/* 投稿 */
+/* 合作 */
+.hz{
+    margin: 30px 0;
+   border-bottom: 2px solid black;
+   height: 45px;
+}
+.hz p{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 45px;
+    width: 100px;
+    margin: 0 auto;
+}
+.js a{
+    font-size: 14px; 
+    color: #777;
+}
