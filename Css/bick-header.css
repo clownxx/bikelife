@@ -1,0 +1,73 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+/* 头部 */
+header{
+    height: 580px;
+    background: red;
+}
+header .nav{
+height: 70px;
+background: #000;
+display: flex;
+}
+.nav-l{
+margin-left: 80px;
+}
+.nav-c{
+margin-left: 120px;
+}
+.nav-c ul{
+    list-style: none;
+    display: flex;
+}
+.nav-c ul li{
+    margin-left: 30px;
+}
+.nav-c ul li a{
+    text-decoration: none;
+    line-height: 70px;
+    color: #C3C6CA;
+    font-weight: bold;
+    font-family: "Microsoft Yahei";
+    font-size: 15px;
+}
+.nav-c ul li:hover a{
+    color: blue;
+}
+.nav-r{
+    width: 200px;
+    height: 32px;
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.nav-r  input{
+    margin-left: 250px;
+    width: 173px;
+    height: 30px;
+    background: #000;
+    color: #999999;
+    border: .5px solid #666;
+    box-sizing: border-box;
+    text-indent: 1em;
+}
+
+/* 内容 */
+.content{
+height: 500px;
+background: green;
+}
+
+/* 尾部 */
+footer{
+    height: 460px;
+    background: gold;
+}
