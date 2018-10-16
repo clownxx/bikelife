@@ -1,4 +1,110 @@
 @charset "utf-8";
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 70px;
+    background: #C3C6CA;
+}
+header .nav{
+height: 70px;
+background: #353535;
+display: flex;
+}
+.nav-l{
+margin-left: 80px;
+}
+.nav-c{
+margin-left: 120px;
+}
+.nav-c ul{
+    list-style: none;
+    display: flex;
+}
+.nav-c ul li{
+    margin-left: 30px;
+}
+.nav-c ul li a{
+    text-decoration: none;
+    line-height: 40px;
+    color: #C3C6CA;
+    font-weight: bold;
+    font-family: "Microsoft Yahei";
+    font-size: 15px;
+}
+/* 单车 */
+.nav-c ul .dcfl .danche{
+    background: #000;
+    width: 150px;
+    height: 222px;
+    position: absolute;
+    top: 70px;
+    z-index: 5;
+    display: none;
+}
+.nav-c ul .dcfl .danche div,.nav-c ul .qixing .qx{
+    width: 150px;  
+    height: 30px;
+}
+.nav-c ul .dcfl .danche a,.nav-c ul .qixing .qx a{
+    margin-left: 10px;
+    color: #777;
+    font-size: 10px;
+    width: 150px;  
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+}
+.nav-c ul .dcfl:hover .danche,.nav-c ul .qixing:hover .qx{
+    display: block;
+}
+.nav-c ul .dcfl .danche div:hover,.nav-c ul .qixing .qx div:hover {
+    background: #777;
+    opacity: .5;
+}
+.nav-c ul .dcfl .danche div:hover a,.nav-c ul .qixing .qx div:hover a{
+    color: #01A1ED;
+}
+/* 骑行 */
+.nav-c ul .qixing .qx{
+    background: #000;
+    width: 150px;
+    height: 63px;
+    position: absolute;
+    top: 70px;
+    z-index: 5;
+    display: none;
+}
+
+
+/* 选中 */
+.nav-c ul li:hover .a{
+    color: #01A1ED;
+}
+.nav-r{
+    width: 200px;
+    height: 32px;
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.nav-r  input{
+    margin-left: 250px;
+    width: 173px;
+    height: 30px;
+    background: #000;
+    color: #999999;
+    border: .5px solid #666;
+    box-sizing: border-box;
+    text-indent: 1em;
+}
+.nav-r .tu img:hover{
+    cursor: pointer;
+}
 .main{
     width: 80%;
     margin: auto;
@@ -6,14 +112,12 @@
 }
 .main-box{
     width: 70%;
-    height: 1000px;
-    background: skyblue;
 }
 .main-box .main-list p{
     font-size: 13px;
 }
 .main-box .main-list span{
-    color: whitesmoke;
+    color: slategrey;
 }
 .main-box .main-list a{
     text-decoration: none;
@@ -25,9 +129,9 @@
 .main-box .article {
     width: 100%;
     height: 250px;
-    background: yellow;
     padding-top: 30px;
     display: flex;
+    position: relative;
 }
 .article .img1 {
     width: 350px;
@@ -55,31 +159,92 @@
     color: silver;
 }
 .article .content p{
-    font-size: 16px;
+    font-size: 13px;
+    line-height: 30px;
 }
 .article .content a{
     text-decoration: none;
     color: saddlebrown;
+    font-size: 12px;
 }
 .article .content a:hover{
     color: red;
     text-decoration: underline red;
 }
+.article .icon{
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    display: flex;
+}
+.article .icon img{
+    width: 26px;
+    height: 20px;
+}
+.article .icon .img1{
+    width: 80px;
+    height: 20px;
+    margin-right: 20px;
+}
+.article .icon span{
+    font-size: 13px;
+    color: slategrey;
+}
+.article .icon .text{
+    width: 30px;
+    height: 20px;
+    padding-top: 0px;
+    text-align: center;
+    position: relative;
+    right: 30px;
+}
+.main-box .huanye {
+    width: 600px;
+    height: 50px;
+    margin-left: 250px;
+}
+.main-box .huanye ul{
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+.main-box .huanye li{
+    border: 1px solid silver;
+    margin-right: 10px;
+    padding: 3px;
+    
+}
+.main-box .huanye a{
+    font-size: 13px;
+    text-decoration: none;
+    color: black
+}
+.main-box .huanye li:hover{
+    background: skyblue;
+}
+.main-box .huanye .text2{
+    width: 100px;
+    height: 20px;
+    margin-top:5px;
+}
+.main-box .huanye .text2 span{
+    font-size: 12px;
+    color: silver;
+}
 .cebian-box {
     width: 30%;
-    height: 1000px;
-    background: blue;
     padding-top: 50px;
 }
 .cebian-box .img2 {
     width: 250px;
     height: 50px;
-    margin:auto;
+    margin-left: 30px;
 }
 .cebian-box .news {
     width: 300px;
     height: 150px;
-    background: red;
     margin-top: 20px;
     margin:auto;
     border-bottom: 1px dotted silver;
@@ -103,4 +268,63 @@
 .cebian-box .news .section p{
     font-size: 13px;
     line-height: 25px;
+}
+.news .section a{
+    text-decoration: none;
+    color: black;
+}
+.news .section a:hover{
+    color: red;
+}
+.cebian-box .tougao {
+    width: 300px;
+    height: 100px;
+    margin-top: 30px;
+    margin-left: 31px;
+}
+.cebian-box .tougao img{
+    width: 300px;
+}
+.foot {
+    width: 100%;
+    height: 100px;
+    background: black;
+}
+.foot .foot-box{
+    width: 500px;
+    height: 80px;
+    position: relative;
+    left: 200px;
+}
+.foot .foot-box ul{
+    list-style-type: none;
+    display: flex;
+}
+.foot .foot-box ul li{
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.foot .foot-box ul a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #0be;
+}
+.foot .foot-box span{
+    font-size: 12px;
+    color: #555555;
+}
+.foot .foot-box a{
+    text-decoration: none;
+    color: #999;
+}
+.foot .foot-box .beian{
+    width: 500px;
+    height: 50px;
+    margin-left: 40px;
+}
+.foot .foot-box ul a:hover{
+    color: white;
+}
+.foot .beian a:hover{
+    color: red;
 }
