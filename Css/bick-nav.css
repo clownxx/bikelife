@@ -26,13 +26,9 @@
         height: 75px;
     }
     .content-top p a{
-        margin-top: 15px;
+        height: 75px;
+        width: 180px;
         float: left;
-        text-decoration: none;
-        color:black;
-        font-weight:bold;
-        font-size: 25px;
-        opacity: .8;
     }
     .content-top ul{
         margin-top: 25px;
@@ -43,10 +39,18 @@
     }
     .content-top ul li{
         cursor: pointer;
-        color: #777;
         padding: 0px 10px;
         border-right: 1px solid#777;
     }
+    .content-top ul li a{
+        text-decoration: none;
+        color: #777;
+        font-size: 13px;
+    }
+    .content-top ul li a:hover{
+        color: red;
+    }
+
     /* 内容的中间 */
     .content-c{
         width: 97%;
